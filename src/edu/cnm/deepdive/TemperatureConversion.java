@@ -37,7 +37,7 @@ public class TemperatureConversion {
   public static double[] convertC2F(double[] celsiusTemperatures) {
     double[] fahrenheitTemperatures = new double[celsiusTemperatures.length];
     for (int i = 0; i < celsiusTemperatures.length; i++) {
-      double celsius = celsiusTemperatures[1];
+      double celsius = celsiusTemperatures[i];
       double fahrenheit = convertC2F(celsius);
       fahrenheitTemperatures[i] = fahrenheit;
     }
